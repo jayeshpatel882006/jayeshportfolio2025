@@ -19,7 +19,7 @@ const topref=useRef(null);
   return (
     <>
       <div>
-        <Navbar bottamrefrence={bottamref}/>
+        <Navbar bottamrefrence={bottamref} topref={topref}/>
         <div className="for-space-div" ref={topref} style={{height:"30px"}}></div>
         <MiddleCompo/>
         <About />
