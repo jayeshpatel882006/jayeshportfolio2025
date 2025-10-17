@@ -1,0 +1,15 @@
+.aboutmain p{
+    margin: 0px;
+    padding-left: 20px;
+    color: #a6aba4;
+}
+.aboutsubdiv{
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+    /* background: red; */
+} 
+.abouttxt{
+    font-size: 20px !important;
+    text-align: center;
+}

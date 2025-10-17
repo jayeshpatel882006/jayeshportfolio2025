@@ -1,13 +1,15 @@
 import "../style/Navbarstyle.css"
-import styled from 'styled-components';
 
-const Navbar = ({bottamrefrence , topref}) => {
+const Navbar = ({bottamrefrence , topref, projectref}) => {
 
   const handalBottamScroll=()=>{
     bottamrefrence.current?.scrollIntoView({behavior:"smooth"})
   }
   const handaltopScroll=()=>{
     topref.current?.scrollIntoView({behavior:"smooth"})
+  }
+  const handalprojectScroll=()=>{
+    projectref.current?.scrollIntoView({behavior:"smooth"})
   }
   return (
     <>
@@ -19,8 +21,7 @@ const Navbar = ({bottamrefrence , topref}) => {
       </button>
            </div>
         <div className="menu">
-            <li className="btn2" >Home</li>
-            <li className="btn2" >About</li>
+            <li className="btn2" onClick={()=>{handalprojectScroll()}} >Project</li>
             <li className="btn2" >Skills</li>
             <li className="btn2"  onClick={()=>{handalBottamScroll()}} >Links</li>
           </div>

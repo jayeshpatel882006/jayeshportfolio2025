@@ -23,3 +23,5 @@ const MiddleCompo = () => {
 };
 
 export default MiddleCompo;
+
+

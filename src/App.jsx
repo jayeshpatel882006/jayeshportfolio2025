@@ -15,15 +15,16 @@ import About from "./components/About"
 
 function App() {
 const bottamref=useRef(null);
+const projectref=useRef(null);
 const topref=useRef(null);
   return (
     <>
       <div>
-        <Navbar bottamrefrence={bottamref} topref={topref}/>
+        <Navbar bottamrefrence={bottamref} topref={topref} projectref={projectref}/>
         <div className="for-space-div" ref={topref} style={{height:"30px"}}></div>
         <MiddleCompo/>
         <About />
-        <Projects/>
+        <Projects reef={projectref}/>
         <BottamSection reef={bottamref} topref={topref}/>
       </div>
     

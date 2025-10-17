@@ -1,3 +1,96 @@
-.projectMainDiv{
-    height: 200vh;
+.projectMainDiv .nameproject{
+    /* background: red; */
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    color: #a6aba4;
+}
+.projectsubdiv{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+.individualproject{
+    width: 20%;
+    border: 1px solid #a6aba4;
+    border-radius: 20px;
+    padding: 15px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+.button-icon {
+  display: flex;
+  border: 2px #fff solid;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.icon {
+  background-color: #fff;
+  padding: 2px;
+}
+
+
+.icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 150px;
+  height: 15px;
+}
+
+.button-icon:hover {
+  border-color: #ff98a2;
+}
+
+.button-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+.button-icon:hover .icon{
+    background-color: #ff98a2;
+}
+
+
+.side {
+  position: absolute;
+  height: 30px;
+  width: 150px;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.top {
+  background: #ff98a2;
+  color: #fff;
+  transform: rotateX(-90deg) translate3d(0, 10px, 1.2em);
+}
+
+.front {
+  background: #222229;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
 }
